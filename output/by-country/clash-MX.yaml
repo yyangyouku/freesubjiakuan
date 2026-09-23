@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - xiaohe
+- name: 🇲🇽 MX 01 - xiaohe
   type: vless
-  server: 172.67.147.209
+  server: 216.238.79.164
   port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
+    path: /
     headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - xiaohe
+  - 🇲🇽 MX 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - xiaohe
+  - 🇲🇽 MX 01 - xiaohe
 rules:
 - MATCH,PROXIES
