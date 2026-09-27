@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇨🇾 CY 02 - xiaohe
   type: vless
   server: 194.76.154.31
