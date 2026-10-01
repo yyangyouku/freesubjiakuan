@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇿🇦 ZA 01 - xiaohe
+- name: 🇮🇪 IE 01 - xiaohe
   type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-  udp: true
-- name: 🇿🇦 ZA 02 - xiaohe
-  type: ss
-  server: 102.37.156.224
+  server: 20.166.59.119
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: gJe7umStIck5Mieg
+  udp: true
+- name: 🇮🇪 IE 02 - xiaohe
+  type: ss
+  server: 20.166.59.119
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: gJe7umStIck5Mieg
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇿🇦 ZA 01 - xiaohe
-  - 🇿🇦 ZA 02 - xiaohe
+  - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇿🇦 ZA 01 - xiaohe
-  - 🇿🇦 ZA 02 - xiaohe
+  - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
 rules:
 - MATCH,PROXIES
