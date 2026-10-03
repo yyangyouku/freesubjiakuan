@@ -6,46 +6,39 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 188.114.98.134
+  server: 217.19.122.200
   port: 443
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 84.38.183.237
+  server: 81.94.148.214
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ws.nightproducts.ru
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /vless#/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /ws
     headers:
-      Host: 84.38.183.237
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 63.141.128.22
-  port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
 proxy-groups:
 - name: PROXIES
   type: select
