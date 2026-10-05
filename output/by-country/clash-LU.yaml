@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇾 BY 01 - xiaohe
+- name: 🇱🇺 LU 01 - xiaohe
   type: vless
-  server: 89.125.96.89
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  server: 107.189.7.176
+  port: 32752
+  uuid: d72045ad-9c37-4768-89c1-88fe6ae7f9fc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇾 BY 01 - xiaohe
+  - 🇱🇺 LU 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 BY 01 - xiaohe
+  - 🇱🇺 LU 01 - xiaohe
 rules:
 - MATCH,PROXIES
