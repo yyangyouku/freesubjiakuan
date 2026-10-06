@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+- name: 🇧🇷 BR 01 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -20,9 +20,9 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+- name: 🇧🇷 BR 02 - xiaohe
   type: vmess
-  server: aksai.org
+  server: 89.39.161.157
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -41,14 +41,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇧🇷 BR 01 - xiaohe
+  - 🇧🇷 BR 02 - xiaohe
 rules:
 - MATCH,PROXIES
