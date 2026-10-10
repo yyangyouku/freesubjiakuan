@@ -15,37 +15,37 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 8.217.13.103
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: www.pubgmobile.com
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: ccc.010304.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: vmess
   server: 47.244.120.197
@@ -63,7 +63,34 @@ proxies:
       Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   type: vmess
-  server: 8.217.13.103
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  type: vmess
+  server: 47.83.207.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
@@ -71,40 +98,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  type: vless
-  server: 130.94.33.80
-  port: 443
-  uuid: 365bebc8-894e-424f-95bf-7edbef311b23
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk.sepporated.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: hk.sepporated.com
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
