@@ -53,20 +53,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇭 TH 06 - xiaohe
   type: vless
-  server: 43.229.148.249
-  port: 443
-  uuid: 81eed05f-e2d0-4944-9e48-caeb8d036557
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: us-lax.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-- name: 🇹🇭 TH 07 - xiaohe
-  type: vless
   server: 104.16.10.2
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
@@ -90,7 +76,6 @@ proxy-groups:
   - 🇹🇭 TH 04 - xiaohe
   - 🇹🇭 TH 05 - xiaohe
   - 🇹🇭 TH 06 - xiaohe
-  - 🇹🇭 TH 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,6 +87,5 @@ proxy-groups:
   - 🇹🇭 TH 04 - xiaohe
   - 🇹🇭 TH 05 - xiaohe
   - 🇹🇭 TH 06 - xiaohe
-  - 🇹🇭 TH 07 - xiaohe
 rules:
 - MATCH,PROXIES
