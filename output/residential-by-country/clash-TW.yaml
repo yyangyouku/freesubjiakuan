@@ -14,12 +14,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: fujrdt.d6f54hd1j.cc
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
+      Host: fujrdt.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: 60.248.219.78
