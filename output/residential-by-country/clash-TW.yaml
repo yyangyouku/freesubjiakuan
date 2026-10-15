@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  type: vmess
-  server: fujrdt.d6f54hd1j.cc
-  port: 443
-  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fujrdt.d6f54hd1j.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fujrdt.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: vless
   server: 60.248.219.78
   port: 443
@@ -40,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

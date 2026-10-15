@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 02 - xiaohe
+  type: vless
   server: 193.188.21.253
   port: 14430
   uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
@@ -17,7 +30,20 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
-- name: 🇸🇪 SE 02 - xiaohe
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 04 - xiaohe
   type: vless
   server: sub.merky.top
   port: 443
@@ -31,74 +57,7 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 03 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
 - name: 🇸🇪 SE 05 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 06 - xiaohe
-  type: vless
-  server: 109.120.155.155
-  port: 444
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇪 SE 07 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 08 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 09 - xiaohe
   type: vless
   server: 94.143.231.146
   port: 443
@@ -112,18 +71,72 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 10 - xiaohe
+- name: 🇸🇪 SE 06 - xiaohe
   type: vless
-  server: 732051t.se1.h1clayd.click
-  port: 443
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: qq
+- name: 🇸🇪 SE 07 - xiaohe
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 08 - xiaohe
+  type: vless
+  server: se1.h1cloud.net
+  port: 26100
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+  servername: www.icloud.com
+  client-fingerprint: edge
+- name: 🇸🇪 SE 09 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 10 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 11 - xiaohe
+  type: vless
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,6 +152,7 @@ proxy-groups:
   - 🇸🇪 SE 08 - xiaohe
   - 🇸🇪 SE 09 - xiaohe
   - 🇸🇪 SE 10 - xiaohe
+  - 🇸🇪 SE 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +168,6 @@ proxy-groups:
   - 🇸🇪 SE 08 - xiaohe
   - 🇸🇪 SE 09 - xiaohe
   - 🇸🇪 SE 10 - xiaohe
+  - 🇸🇪 SE 11 - xiaohe
 rules:
 - MATCH,PROXIES
