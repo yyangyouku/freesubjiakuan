@@ -32,14 +32,12 @@ proxies:
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  type: ss
+  server: 200.181.82.91
+  port: 21818
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
