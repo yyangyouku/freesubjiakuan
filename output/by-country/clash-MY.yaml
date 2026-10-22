@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - xiaohe
+- name: 🇲🇾 MY 01 - xiaohe
   type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless
+    path: /fp=chrome
     headers:
-      Host: 5.253.29.254
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - xiaohe
+  - 🇲🇾 MY 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - xiaohe
+  - 🇲🇾 MY 01 - xiaohe
 rules:
 - MATCH,PROXIES
