@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 199.232.239.239
+  port: 443
+  uuid: 49883404-5bd4-42fc-9cb4-913980e278ad
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: firefox.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
     headers:
-      Host: 45.144.234.157
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 188.114.98.0
@@ -31,6 +32,19 @@ proxies:
     path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
       Host: server8.9966338.xyz
+- name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
+  - 🇫🇮 FI 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
+  - 🇫🇮 FI 03 - xiaohe
 rules:
 - MATCH,PROXIES

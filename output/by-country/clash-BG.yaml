@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: p2real22.greewebservices.ir
-  port: 1320
+  server: p2real4.greewebservices.ir
+  port: 1340
   uuid: 2582857a-632b-4c4e-9b67-96213cbaf58c
   udp: true
   tls: true
