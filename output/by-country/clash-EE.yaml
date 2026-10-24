@@ -4,30 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - xiaohe
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+- name: 🇪🇪 EE 01 - xiaohe
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /aiaiai
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - xiaohe
+  - 🇪🇪 EE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - xiaohe
+  - 🇪🇪 EE 01 - xiaohe
 rules:
 - MATCH,PROXIES
