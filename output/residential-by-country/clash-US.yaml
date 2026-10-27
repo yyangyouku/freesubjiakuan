@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 112.169.175.199
-  port: 31157
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
+  server: 169.128.83.4
+  port: 57259
+  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
   udp: true
   tls: false
   skip-cert-verify: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
