@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
+  server: 191.44.114.154
+  port: 2096
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st5ff8a.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st5ff8a.rumedia-cdn.com
+- name: 🇸🇪 SE 02 - xiaohe
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -17,20 +31,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 02 - xiaohe
-  type: vless
-  server: 191.44.114.179
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st33614.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
