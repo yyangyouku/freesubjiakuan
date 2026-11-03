@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 PH 01 - xiaohe
+  type: vless
+  server: 8.220.180.112
+  port: 80
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xy1ej.stream-node-us.danfeng.qzz.io
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: xy1ej.stream-node-us.danfeng.qzz.io
+- name: 🇵🇭 PH 02 - xiaohe
   type: ss
   server: 149.104.109.252
   port: 8882
@@ -17,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇭 PH 01 - xiaohe
+  - 🇵🇭 PH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 PH 01 - xiaohe
+  - 🇵🇭 PH 02 - xiaohe
 rules:
 - MATCH,PROXIES

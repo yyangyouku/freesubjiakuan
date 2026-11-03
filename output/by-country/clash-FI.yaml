@@ -18,6 +18,13 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - xiaohe
+  type: ss
+  server: 185.4.115.149
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  udp: true
+- name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -30,20 +37,19 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - xiaohe
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vless
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +58,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +67,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaohe
   - 🇫🇮 FI 02 - xiaohe
   - 🇫🇮 FI 03 - xiaohe
+  - 🇫🇮 FI 04 - xiaohe
 rules:
 - MATCH,PROXIES

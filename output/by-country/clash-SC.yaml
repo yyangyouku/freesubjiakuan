@@ -5,87 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇨 SC 02 - xiaohe
-  type: vless
-  server: 154.218.15.250
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-1cu.pages.dev
-- name: 🇸🇨 SC 03 - xiaohe
   type: ss
   server: 45.207.207.25
   port: 443
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 172.64.155.209
-  port: 443
-  uuid: 64726966-0000-4000-8000-740000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  network: ws
-  ws-opts:
-    path: /drift
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇸🇨 SC 05 - xiaohe
-  type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - xiaohe
-  - 🇸🇨 SC 02 - xiaohe
-  - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
-  - 🇸🇨 SC 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - xiaohe
-  - 🇸🇨 SC 02 - xiaohe
-  - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
-  - 🇸🇨 SC 05 - xiaohe
 rules:
 - MATCH,PROXIES
