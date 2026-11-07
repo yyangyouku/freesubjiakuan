@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - xiaohe
+- name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: 104.21.91.49
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  server: 89.117.112.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vpn.cintaku.qzz.io
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: vms.lifetime11.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 rules:
 - MATCH,PROXIES

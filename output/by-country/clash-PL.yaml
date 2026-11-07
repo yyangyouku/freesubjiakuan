@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 02 - xiaohe
-  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -27,49 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: 212.119.43.76
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇵🇱 PL 05 - xiaohe
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 06 - xiaohe
+- name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -85,10 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,9 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
-  - 🇵🇱 PL 05 - xiaohe
-  - 🇵🇱 PL 06 - xiaohe
 rules:
 - MATCH,PROXIES
