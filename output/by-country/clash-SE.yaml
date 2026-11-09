@@ -12,19 +12,6 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇪 SE 02 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - xiaohe
   type: vmess
   server: 62.93.166.184
   port: 1270
@@ -35,7 +22,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 04 - xiaohe
+- name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 194.104.94.141
   port: 443
@@ -44,6 +31,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: se3.shtil.io
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 194.104.94.141
@@ -55,7 +56,7 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 06 - xiaohe
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
