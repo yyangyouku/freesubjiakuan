@@ -31,16 +31,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -53,6 +43,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - xiaohe
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 proxy-groups:
 - name: PROXIES
   type: select
