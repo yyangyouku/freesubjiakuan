@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - xiaohe
-  type: ss
-  server: 87.228.61.175
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: tAGGzgRCi6W95UwG0qerf6
+- name: 🇻🇳 VN 01 - xiaohe
+  type: vless
+  server: 150.95.109.109
+  port: 2086
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - xiaohe
+  - 🇻🇳 VN 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - xiaohe
+  - 🇻🇳 VN 01 - xiaohe
 rules:
 - MATCH,PROXIES
