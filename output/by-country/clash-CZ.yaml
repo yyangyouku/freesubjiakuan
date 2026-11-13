@@ -6,29 +6,45 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 188.137.178.174
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 104.18.79.242
+  port: 443
+  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
+  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /11290579a72cdb4e?ed=2560
     headers:
-      Host: fs.qicai99.com
+      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: 94.247.142.1
+  port: 443
+  uuid: fd62968a-2e97-41ea-9aa0-aa61aed78955
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
 rules:
 - MATCH,PROXIES
