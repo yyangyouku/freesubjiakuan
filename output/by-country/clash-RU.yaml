@@ -12,40 +12,54 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  type: vless
+  server: 188.225.37.175
+  port: 443
+  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cryptoventura.online
+  network: ws
+  ws-opts:
+    path: /api/de3/live
+    headers:
+      Host: cryptoventura.online
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 188.225.37.175
+  server: 185.178.208.167
   port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cryptoventura.online
+  servername: mbr.rkn-pediki.site
   network: ws
   ws-opts:
-    path: /api/de3/live
+    path: /session
     headers:
-      Host: cryptoventura.online
+      Host: mbr.rkn-pediki.site
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: ss
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
-  server: 188.225.37.175
+  server: 185.178.208.167
   port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cryptoventura.online
+  servername: mbr.rkn-pediki.site
   network: ws
   ws-opts:
-    path: /api/de3/live
+    path: /session
     headers:
-      Host: cryptoventura.online
+      Host: mbr.rkn-pediki.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +69,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +79,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

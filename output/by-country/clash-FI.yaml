@@ -32,19 +32,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - xiaohe
-  type: vless
   server: 138.124.49.108
   port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
@@ -54,28 +41,10 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 07 - xiaohe
+- name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 146.103.118.189
   port: 443
@@ -89,20 +58,19 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 08 - xiaohe
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: 109.120.134.181
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless
     headers:
-      Host: fs.qicai99.com
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,9 +81,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - xiaohe
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
-  - 🇫🇮 FI 06 - xiaohe
-  - 🇫🇮 FI 07 - xiaohe
-  - 🇫🇮 FI 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,8 +91,5 @@ proxy-groups:
   - 🇫🇮 FI 03 - xiaohe
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
-  - 🇫🇮 FI 06 - xiaohe
-  - 🇫🇮 FI 07 - xiaohe
-  - 🇫🇮 FI 08 - xiaohe
 rules:
 - MATCH,PROXIES
