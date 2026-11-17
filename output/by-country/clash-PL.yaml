@@ -6,16 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: d58daft.plp1.h1cloud.net
+  server: 80.47.10.106
   port: 443
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
-  servername: d58daft.plp1.h1cloud.net
-  client-fingerprint: chrome
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: pl8.galioncc.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
