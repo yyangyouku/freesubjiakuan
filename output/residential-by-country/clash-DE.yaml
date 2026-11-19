@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
   type: vless
-  server: 185.39.204.117
-  port: 10002
-  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  server: 172.64.88.98
+  port: 443
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tr2.vpnjantit.com
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
   network: ws
   ws-opts:
-    path: /vpnjantit
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
     headers:
-      Host: 185.39.204.117
+      Host: 1v5vp5jsq611a5dsm.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
