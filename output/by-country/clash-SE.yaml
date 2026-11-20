@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - xiaohe
   type: vmess
   server: 62.93.166.184
@@ -37,30 +43,12 @@ proxies:
     headers:
       Host: subgift.gcorecdn.com
 - name: 🇸🇪 SE 04 - xiaohe
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 05 - xiaohe
-  type: vless
-  server: 88.216.214.159
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,7 +58,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,6 +67,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
   - 🇸🇪 SE 04 - xiaohe
-  - 🇸🇪 SE 05 - xiaohe
 rules:
 - MATCH,PROXIES
