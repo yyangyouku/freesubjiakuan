@@ -6,22 +6,22 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 168.113.253.178
+  server: 136.148.83.69
   port: 443
-  uuid: 608172ed-68e4-0001-85dc-f92c25d0eb92
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 168.113.253.178
+  server: 136.148.83.69
   port: 443
-  uuid: d6d40100-9442-0001-b5b9-6d259318c421
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 136.148.83.69
@@ -32,33 +32,6 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
-  server: 168.113.253.178
-  port: 443
-  uuid: eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: vless
-  server: 168.113.253.178
-  port: 443
-  uuid: d6d40100-9442-0001-b5b9-6d259318c421
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: vless
-  server: 168.113.252.11
-  port: 443
-  uuid: 8973e4a5-1c15-0001-abc7-60fb180063ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jkawq-ru-45sb.fade.mom
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: vless
   server: 147.45.175.81
   port: 443
@@ -72,6 +45,31 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   type: vless
   server: 136.148.83.69
@@ -82,33 +80,6 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   type: vless
   server: 147.45.221.225
   port: 443
@@ -122,15 +93,6 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  type: vless
-  server: 168.113.253.178
-  port: 443
-  uuid: eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,10 +107,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -163,9 +121,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
 rules:
 - MATCH,PROXIES
