@@ -8,16 +8,16 @@ proxies:
   type: vless
   server: 185.247.224.206
   port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: accessfooter.cleanfoodshop.org
+  servername: inlay.merlano.monster
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /api/de3/stream
     headers:
-      Host: accessfooter.cleanfoodshop.org
+      Host: inlay.merlano.monster
 proxy-groups:
 - name: PROXIES
   type: select
