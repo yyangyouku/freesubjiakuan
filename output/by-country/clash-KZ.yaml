@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
   type: vless
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 8443
   uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   udp: true
@@ -15,9 +15,9 @@ proxies:
   servername: 3h-kazakhstan1.09vpn.com
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vless/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
     headers:
-      Host: 38.107.234.57
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 02 - xiaohe
   type: vless
   server: 38.107.234.57
