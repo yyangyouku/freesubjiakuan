@@ -4,26 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇱🇹 LT 01 - xiaohe
   type: vless
-  server: ns2.irts.lol
+  server: 5.199.173.195
   port: 443
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ns2.irts.lol
+  servername: v4-77j.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v4-77j.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇱🇹 LT 01 - xiaohe
 rules:
 - MATCH,PROXIES
